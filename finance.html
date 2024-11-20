@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Fin-Fact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Finance for Kids</h1>
+        <p id = "fact">Understanding money is important!</p>
+        <button id="finFactButton">Show me a fact</button>
+    </div>
+    <script>
+    const Finfacts = [
+        "Save a little, spend a little, and you'll always have a lot! 💰",
+        "A penny saved is a penny earned. 🪙",
+        "Money doesn't grow on trees, but it can grow in a bank! 🏦",
+        "Dream big, Budget Higher 💸",
+        "Your pocket money is your first paycheck, manage it wisely! 💼",
+        "Money grows when knowledge shows! 📚",
+        "Every coin saved is a step closer to your goal! 🎯"
+    ];
+    
+    document.getElementById('finFactButton').addEventListener('click', function() {
+        const randomIndex = Math.floor(Math.random() * Finfacts.length);
+        document.getElementById('fact').textContent = Finfacts[randomIndex];
+    });</script>
+</body>
+</html>

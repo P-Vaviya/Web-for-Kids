@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Gen AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gen AI for Kids</h1>
+        <p id = "genfact">Learn about the amazing world of AI with these quotes:</p>
+        <button id="genFactButton">Show me a fact</button>
+    </div>
+    <script> 
+    const genfacts = [
+    "AI is like a super-smart robot friend! 🦾",
+    "With AI, computers can learn and grow just like you! 📈",
+    "AI helps us solve problems faster and smarter. 🧠",
+    "Imagine a world where machines can think and help us every day. 🤔",
+    "AI is the future, and you're part of it! 🔮",
+    "Code Today, Create Tomorrow! 💻",
+    "Curiosity fuels innovation, AI amplifies it! 🔍"
+];
+
+document.getElementById('genFactButton').addEventListener('click', function() {
+    const randomIndex = Math.floor(Math.random() * genfacts.length);
+    document.getElementById('genfact').textContent = genfacts[randomIndex];
+});
+
+</script>
+</body>
+</html>

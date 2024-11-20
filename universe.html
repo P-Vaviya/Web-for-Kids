@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Universe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Universe for Kids</h1>
+        <p id = "Universefact">Explore the wonders of space with these quotes:</p>
+        <button id = "UniFactButton">Show me a fact</button>
+    </div>
+    <script>
+        const UniFacts = [
+            "Stars are like the universe's nightlights. ✨",
+            "Every planet has its own story to tell. 🌏",
+            "The universe is full of mysteries waiting to be discovered. 🧐",
+            "Cosmic dreams ignite infinite possibilities! 🚀",
+            "Stars shine brighter with curious minds! 🌟",
+            "Gravity can't hold down big dreams! 💭",
+            "Imagine, discover, communicate: the alien connection! 👽"
+        ];
+ 
+document.getElementById('UniFactButton').addEventListener('click', function() {
+    const randomIndex = Math.floor(Math.random() * UniFacts.length);
+    document.getElementById('Universefact').textContent = UniFacts[randomIndex];
+});
+
+</script>
+</body>
+</html>

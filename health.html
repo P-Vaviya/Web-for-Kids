@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Health</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Health for Kids</h1>
+        <p id = "healthFact">Stay healthy with these fun quotes:</p>
+        <button id = "HealthFactButton">Show me a fact</button>
+    <script>
+        const HealthFacts = [
+            "An apple a day keeps the doctor away! 🍎",
+            "Healthy habits make happy kids! 😄",
+            "Eat your veggies, they're superpowers in disguise! 🥗",
+            "Drink water, it's the best drink for your body! 💧",
+            "Exercise is fun, and it's good for you too! 💪",
+            "Take care of your body, it's your best friend! 🤝",
+            "Breathe, Believe and Achieve ☘️"
+        ];
+
+document.getElementById('HealthFactButton').addEventListener('click', function() {
+    const randomIndex = Math.floor(Math.random() * HealthFacts.length);
+    document.getElementById('healthFact').textContent = HealthFacts[randomIndex];
+});
+
+</script>
+</body>
+</html>
